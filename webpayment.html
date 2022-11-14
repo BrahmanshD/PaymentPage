@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="icon" type="image/x-icon" href="img/onlinepay.jpg">
+</head>
+<link rel="stylesheet" href="stylepay.css">
+<body >
+    <div class="container">
+        <form action="" method="get">
+            <h1 class="payheading">Payment Form</h1>
+            <img src="img/payment.jpg" alt="pay" class="payment">
+            <hr>
+            <h2 class="det"><u>Contact Details</u></h2>
+            <!-- *(STAR) CAN BE USED TO DENOTE A COMPULSARY FIELD AND KEYWORD "REQUIRED" IS USED FOR ALL COMPULSARY FIELDS -->
+            <p><h6>* are compulsary fields</h6></p>
+            <p>NAME: * <input type="text" name="first name" required placeholder="Full_name"> <!--<input type="text" placeholder="last-name"  name="last name">--> </p>
+            <p>Email : <input type="email" placeholder="abcdef@email.com" name="email" id="email" required> </p>
+            <p>Pincode <input type="text" name="pincode" placeholder="123456" id="pincode" required></p>
+            <fieldset>
+                <legend>Gender</legend>
+                <p>
+                    <!-- OMR TYPE INPUT -->
+                    Male <input type="radio" name="gender" id="male"> Female <input type="radio" name="gender" id="female"> Other<input type="radio" name="gender" id="Other">
+                </p>
+            </fieldset>
+            <p>ADDRESS: <textarea name="address" placeholder="Enter your address..!!!!" id="address" cols="90" rows="10"></textarea></p>
+        
+            <hr>
+            <fieldset>
+                <!-- TO GIVE A HEADING IN OF THE BOX -->
+                <legend>Online Payment Card Details</legend>
+                <img src="img/debit.jpg" alt="image" class="imgdebit"><img src="img/rupay.png" class="rupay" alt="">
+                <p><b>Card Type:</b>
+                    <select name="card" id="card" required >
+                        <!-- DROP DOWN OPTIONS  -->
+                        <option value="">-select a card type-</option>
+                        <option value="visa">visa</option>
+                        <option value="debit">debit</option>
+                        <option value="mastercard">mastercard</option>
+                        <option value="rupay">rupay</option>
+                    </select>
+                </p>
+                <p>Amount to be paid: <input type="number"  id="amount" required></p>
+                <P>Card number: <input type="number" name="number" id="number" required> </P>
+                <!-- FORMAT FOR DATE TYPE INPUT -->
+                <P>Valid till: <input type="date" name="date" id="date" required> </P>
+                <!-- HIDDEN FORMAT TEXT FOR PASSWORDS -->
+                <P>CVV: <input type="password" name="cvv" id="cvv" required> </P>
+                <input type="submit" value="Pay now">
+            </fieldset>
+            
+            
+        </form>
+        <p><b><i>Click on the below link to go back to home page:</i></b> <a href="#"><h2>Home</h2></a></p>
+    </div>
+
+</body>
+</html>
