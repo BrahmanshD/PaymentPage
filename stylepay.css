@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px 30px;
+    font-size: medium;
+    padding: 10px;
+}
+.container {
+    background-color: rgb(195, 195, 195);
+    padding: 15px 20px 15px 20px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,textarea{
+    width: 100%;
+    padding: 15px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+fieldset{
+    background-color:rgb(249, 249, 249);
+    border: 2px solid grey;
+    border-radius: 10px;
+    width: 100%;
+}
+.payheading{
+    text-align: center;
+    background-color: rgb(126, 119, 115);
+}
+.det{
+    text-align: center;
+}
+input[type="Submit"]{
+    background-color:#4daea1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor:pointer;
+    width: 80%;
+    text-align: center;
+}
+input[type="Submit"]:hover{
+    background-color: darkseagreen;
+}
+.imgdebit,.rupay{
+    width: 50%px;
+    height:50px;
+    border: 2px ;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.payment{
+    
+    width: 50%px;
+    height:80px;
+    border: 2px ;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+    clip-path: circle(45% at 49% 50%); 
+}
+h6{
+    text-align: end;
+}
